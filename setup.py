@@ -11,7 +11,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='djangocms-portfolio',
-    version='0.5',
+    version='0.6',
     packages=find_packages(),
     include_package_data=True,
     license='GNU General Public License',
@@ -19,6 +19,6 @@ setup(
     long_description=read('README.md'),
     url='https://github.com/Pyc0kw4k/djangocms-portfolio',
     author='Lozano Joaquim',
-    install_requires=["django-taggit==0.22.1","django-filer==1.2.8"],
+    install_requires=["django-taggit==0.22.1"],
     author_email='joaquimlozano@gmail.com',
 )

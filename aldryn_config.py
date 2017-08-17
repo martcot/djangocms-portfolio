@@ -9,6 +9,5 @@ class Form(forms.BaseForm):
     def to_settings(self, data, settings):
         settings["INSTALLED_APPS"].extend(["djangocms_portfolio"])
         settings["INSTALLED_APPS"].extend(["taggit"])
-        settings["INSTALLED_APPS"].extend(["django-filer"])
         settings["WORK_PAGINATION"] = data['pagination']
         return settings
