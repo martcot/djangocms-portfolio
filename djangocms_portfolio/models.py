@@ -54,7 +54,6 @@ class Work(models.Model):
     def get_absolute_url(self):
         return reverse('work_detail', args=[self.slug])
 
-
     def get_next_work(self):
         try:
             next_work = Work.objects.get(pk=self.pk+1)
