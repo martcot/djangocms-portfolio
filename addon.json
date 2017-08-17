@@ -1,0 +1,6 @@
+{
+    "package-name": "djangocms-portfolio",
+    "installed-apps": [
+        "djangocms_portfolio"
+    ]
+}
