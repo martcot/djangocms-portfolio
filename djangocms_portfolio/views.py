@@ -18,7 +18,7 @@ from django.conf import settings
 
 class PortfolioWorkListView(ListView):
     model = Work
-    template_name = 'portfolio/portfolio_work_list.html'
+    template_name = 'djangocms_portfolio/portfolio_work_list.html'
     context_object_name = "work_list"
     paginate_by = settings.WORK_PAGINATION
 
@@ -43,15 +43,15 @@ class PortfolioWorkListView(ListView):
 
 class PortfolioWorkDetailView(DetailView):
     model = Work
-    template_name = 'portfolio/portfolio_work_detail.html'
+    template_name = 'djangocms_portfolio/portfolio_work_detail.html'
 
 
 class WorkCategoryListView(ListView):
     model = Work
     context_object_name = 'work_list'
-    template_name = 'portfolio/portfolio_work_list.html'
+    template_name = 'djangocms_portfolio/portfolio_work_list.html'
     paginate_by = settings.WORK_PAGINATION
-    view_url_name = 'portfolio:work_category'
+    view_url_name = 'djangocms_portfolio:work_category'
 
     def get_queryset(self):
         qs = super(WorkCategoryListView, self).get_queryset()
@@ -80,9 +80,9 @@ class WorkCategoryListView(ListView):
 class WorkTagListView(ListView):
     model = Work
     context_object_name = 'work_list'
-    template_name = 'portfolio/portfolio_work_list.html'
+    template_name = 'djangocms_portfolio/portfolio_work_list.html'
     paginate_by = settings.WORK_PAGINATION
-    view_url_name = 'portfolio:work_tag'
+    view_url_name = 'djangocms_portfolio:work_tag'
 
     def get_queryset(self):
         qs = super(WorkTagListView, self).get_queryset()

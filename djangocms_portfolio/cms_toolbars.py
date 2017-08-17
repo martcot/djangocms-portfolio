@@ -14,10 +14,10 @@ class PortfolioToolbar(CMSToolbar):
         admin_menu = self.toolbar.get_or_create_menu('portfolio', _('Works'))
 
         # Urls
-        url_list_work = reverse('admin:portfolio_work_changelist')
-        url_add_work = reverse('admin:portfolio_work_add')
-        url_list_category = reverse('admin:portfolio_categorywork_changelist')
-        url_add_category = reverse('admin:portfolio_categorywork_add')
+        url_list_work = reverse('admin:djangocms_portfolio_work_changelist')
+        url_add_work = reverse('admin:djangocms_portfolio_work_add')
+        url_list_category = reverse('admin:djangocms_portfolio_categorywork_changelist')
+        url_add_category = reverse('admin:djangocms_portfolio_categorywork_add')
 
         # Works
         admin_menu.add_sideframe_item(_('Add Work'), url=url_add_work)
