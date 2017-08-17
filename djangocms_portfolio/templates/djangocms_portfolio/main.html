@@ -1,0 +1,11 @@
+{% load i18n cms_tags sekizai_tags thumbnail tz staticfiles %}
+{% extends 'base.html' %}
+
+
+{% addtoblock 'css' %}
+<link href="{% static 'djangocms_portfolio/css/style.css' %}" rel="stylesheet">
+{% endaddtoblock %}
+
+
+
+{% block content %}{% endblock %}
