@@ -11,11 +11,11 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='djangocms-portfolio',
-    version='0.2',
+    version='0.4',
     packages=find_packages(),
     include_package_data=True,
     license='GNU General Public License',
-    description='Widget Reservit for DjangoCMS',
+    description='Portfolio small app',
     long_description=read('README.md'),
     url='https://github.com/Pyc0kw4k/djangocms-portfolio',
     author='Lozano Joaquim',
